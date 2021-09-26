@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bucket</title>
+    <link rel="Stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="box">
+        <h1>Bucket Details</h1><br>
+        <form action="/bucket" method="POST">
+            <label for="bucketname">Bucket Name </label><br>
+            <input type="text" name="bucketname" required>
+            <br><br>
+
+            <label for="description">Input Area </label><br>
+            <textarea name="description" style="resize: none" rows="5"></textarea>
+            <br><br>
+            <button type="submit">Submit</button>
+            <button><a href="/bucketlist">List</a></button>
+        </form>
+    </div>
+
+</body>
+
+</html>

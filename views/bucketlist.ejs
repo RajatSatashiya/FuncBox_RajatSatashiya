@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BucketList</title>
+    <link rel="Stylesheet" href="style.css">
+</head>
+<body style="margin:10px">
+    <% for(var i=0; i<data.length; i++){ %>
+        <div class="bucket">
+            <div class="title"> 
+                <%= data[i].name %>
+            </div>
+            <div class="desc">
+                <%= data[i].description %>
+            </div>
+        </div>
+    <% } %>
+
+    <form action="/logout" method="POST">
+        <button><a href="/bucket">Bucket</a></button>
+        <button type="submit">Log Out</button>
+    </form>
+</body>
+</html>
